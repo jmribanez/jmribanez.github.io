@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cloud 9 Superstore</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'Montserrat',sans-serif;
+            }
+            #container{
+                width: 1000px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #logo{
+                width: 150px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #22679D;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: cornflowerblue;
+            }
+            li a:active{
+                background-color: coral;
+            }
+            .dropnav {
+                height: 100px;
+                display: none;
+            }
+            .dropnav:target {
+                display:block;
+            }
+            .dropnav p{
+                margin:0px;
+                padding: 10px;
+            }
+            #nav_home{
+                background-color: lightblue;
+            }
+            #nav_elec{
+                background-color: lightcoral;
+            }
+            #nav_groc{
+                background-color: lightgreen;
+            }
+            #hero {
+                margin-top: 20px;
+                height: 500px;
+                background-image: url('https://cdn.mos.cms.futurecdn.net/cXmVktVbaugWA7mzqnreZ3-970-80.png.webp');
+                background-size: cover;
+                background-position: center;
+                overflow: hidden;
+            }
+            .herohead{
+                color: white;
+                height: 500px;
+                width: 100%;
+                padding-top: 275px;
+                padding-left: 50px;
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+                font-size: 40pt;
+                font-weight: 800;
+                font-family: 'Montserrat';
+            }
+            .herohead:hover{
+                background-image: linear-gradient(to bottom, rgba(34,103,157,0), rgba(34,103,157,1));
+            }
+            small{
+                font-weight: 300;
+            }
+            #offers{
+                margin-top: 20px;
+            }
+            .offercontent{
+                width: 16%;
+                height: 160px;
+                margin: 0.15%;
+                background-color: lightblue;
+                display: inline-block;
+            }
+            .offercontent:first-of-type{
+                background-color:lightslategray;
+            }
+            .offercontent:last-of-type{
+                background-color:lightgreen;
+            }
+            .offercontent:hover{
+                background-color: lightcoral;
+            }
+            footer {
+                margin-top: 20px;
+                background-color: lightgray;
+            }
+            footer p{
+                text-align: center;
+                padding:10pt;
+                font-size: small;
+            }
+            hr {
+                width: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <img id="logo" src="https://static.wikia.nocookie.net/superstore-nbc/images/3/30/Cloud_9_Superstore_logo.jpg">
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#nav_home">Home</a></li>
+                    <li><a href="#nav_elec">Electronics</a></li>
+                    <li><a href="#nav_groc">Groceries</a></li>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Outdoors</a></li>
+                </ul>
+                <div id="nav_home" class="dropnav">
+                    <p>Links for Homepage ads</p>
+                </div>
+                <div id="nav_elec" class="dropnav">
+                    <p>Links for Electronics</p>
+                </div>
+                <div id="nav_groc" class="dropnav">
+                    <p>Links for Groceries</p>
+                </div>
+            </nav>
+            <section id="hero">
+                <h3 class="herohead">Plash Speed 5<br><small>Available now</small></h3>
+            </section>
+            <section id="offers">
+                <div class="offercontent">
+                    1st
+                </div>
+                <div class="offercontent">
+                    2nd
+                </div>
+                <div class="offercontent">
+                    3rd
+                </div>
+                <div class="offercontent">
+                    4th
+                </div>
+                <div class="offercontent">
+                    5th
+                </div>
+                <div class="offercontent">
+                    6th
+                </div>
+            </section>
+            <footer>
+                <p>Visit our new store at Ozark Highlands, Missouri</p>
+                <div>
+                    <hr>
+                    <p>Cloud 9 Superstore - Have a Heavenly Day</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
